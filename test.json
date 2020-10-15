@@ -1,0 +1,16 @@
+#%RAML 0.8
+title: Gavin
+version: 0.1
+baseUri: /ncc/{version}
+/customer:
+  displayName: Get customer details
+  post:
+    description: xxxxx
+    body:
+      application/xml:
+        schema: !include myschemarequest.xsd
+    responses:
+      200:
+        body:
+          application/xml:
+            schema: !include myschemaresponse.xsd
